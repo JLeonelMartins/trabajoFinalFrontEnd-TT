@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fuente retro */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #111111;
+  color: #0ff;
+}
+
+.imgRetro {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+.top-bar {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 1rem;
+  width: auto;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1rem;
+  color: #0ff;
+}
+
+.search-bar {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  background-color: cyan;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#user-icons  {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  white-space: nowrap;
+}
+
+/* Navbar */
+.nav-bar {
+  background-color: #222;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: baseline;
+  gap: 14rem;
+}
+
+.nav-bar a {
+  display: inline;
+  text-decoration: none;
+  color: #0ff;
+  font-size: 3rem;
+}
+
+.nav-bar a:hover {
+  color: #fff;
+}
+
+/* Productos */
+.consola-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.consola {
+  background-color: #222;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 0 10px #0ff;
+  transition: transform 0.2s;
+}
+
+.consola:hover {
+  transform: scale(1.05);
+}
+
+.consola img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  padding-bottom: 2rem;
+}
+
+#nes img {
+  padding-bottom: 5rem;
+}
+
+.consola video {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid;
+}
+
+.consola button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #0ff;
+  color: #000;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
+/* Ocultar carrito hasta que se active */
+.hidden {
+  display: none;
+}
+
+body {
+  background-image: url('imagenes/Videojuegos-retro.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+.juegos-section {
+  padding: 2rem;
+  background-color: #111;
+  color: #0ff;
+  text-align: center;
+}
+
+.juegos-nav {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.juegos-nav a {
+  color: #0ff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.juegos-nav a:hover {
+  color: #fff;
+}
+
+.juegos-grid {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.juego {
+  background-color: #222;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px #0ff;
+  transition: transform 0.2s;
+}
+
+.juego:hover {
+  transform: scale(1.05);
+}
+
+.juego img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+  border: 2px solid;
+}
+
+.footer-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.formulario {
+  margin-bottom: 1rem;
+}
+
+.campos-formulario {
+  display: grid;
+  width: 100px;
+  max-width: 300px;
+  gap: 10px;
+}
+
+.redes {
+  padding: 0px;
+
+}
+
+.formulario,
+.redes,
+.pagar,
+.mapa {
+  flex: 1 1 300px;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 250px;
+}

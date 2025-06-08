@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!--Iconos font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="estilos.css" />
+  <title>Retro Pixel - Gaming Store</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="top-bar">
+      <div class="logo">🕹️ Retro Pixel</div>
+      <img src="imagenes/Retro-Pixel-Preview-preview.avif" alt="Retro" class="imgRetro">
+
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar productos" id="search-bar">
+        <button>🔍</button>
+      </div>    
+
+      <div class="user-icons">
+        <span>👤 Ingresá</span>
+        <span id="cart-toggle">🛒 (<span id="cart-count">0</span>)</span>
+      </div>
+    </div>
+
+    <nav class="nav-bar"> 
+      <a id="consola-list"></a>
+      <a href="#consolas">Consolas</a>
+      <a href="#juegos">Juegos</a>
+      <a href="#accesorios">Accesorios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- CATÁLOGO -->
+  <main>
+    <section class="consola-list" id="consolas">
+      <div class="consola" id="nes">
+        <h2>NES</h2>
+        <img src="imagenes/nes/nes.png" alt="NES">
+        <video controls autoplay muted width="400" class="video">
+          <source src="audios y videos/nes.mp4" type="video/mp4">
+        </video>
+        <p>$100</p>
+        <button onclick="addToCart('NES', 99)">Insert Coin</button>
+      </div>
+
+      <div class="consola" id="gameboy">
+        <h2>GameBoy</h2>
+        <img src="imagenes/game boy/gameboy.png" alt="GameBoy">
+        <video controls autoplay muted width="400" class="video">
+          <source src="audios y videos/gameboy.mp4" type="video/mp4">
+        </video>
+        <p>$60</p>
+        <button onclick="addToCart('GameBoy', 89)">Insert Coin</button>
+      </div>
+
+      <div class="consola" id="snes">
+        <h2>SNES</h2>
+        <img src="imagenes/snes/snes.png" alt="SNES">
+        <video controls autoplay muted width="400" class="video">
+          <source src="audios y videos/snes.mp4" type="video/mp4">
+        </video>
+        <p>$79.99</p>
+        <button onclick="addToCart('SNES', 129)">Insert Coin</button>
+      </div>
+    </section>
+    <section id="juegos" class="juegos-section">
+  <h2>🎮 Juegos por Consola</h2>
+
+  <nav class="juegos-nav">
+    <a href="#juegos-nes">NES</a>
+    <a href="#juegos-gameboy">GameBoy</a>
+    <a href="#juegos-snes">SNES</a>
+  </nav>
+
+  <div id="juegos-nes" class="juegos-grid">
+    <h3>NES</h3>
+    <div class="juego">
+      <img src="imagenes/nes/supermario.jpg" alt="Super Mario">
+      <p>Super Mario Bros</p>
+      <span>$30</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/nes/supermario2.jpg" alt="Super Mario Bros 2">
+      <p>Super Mario Bros 2</p>
+      <span>$30</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/nes/supermario3.jpg" alt="Super Mario">
+      <p>Super Mario Bros 3</p>
+      <span>$30</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/nes/zelda.jpg" alt="Juego NES 2">
+      <p>Legend of Zelda</p>
+      <span>$30</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/nes/donkey kong.jpg" alt="Donkey kong">
+      <p>Donkey Kong</p>
+      <span>$30</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/nes/golf2.jpg" alt="Golf">
+      <p>Golf</p>
+      <span>$30</span>
+    </div>
+  </div>
+
+  <div id="juegos-gameboy" class="juegos-grid">
+    <h3>GameBoy</h3>
+    <div class="juego">
+      <img src="imagenes/game boy/pokeamarillo.jpg" alt="Pokemon Amarillo">
+      <p>Pokémon Amarillo</p>
+      <span>$20</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/game boy/pokerojo.jpg" alt="Pokemon Rojo">
+      <p>Pokémon Rojo</p>
+      <span>$20</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/game boy/pokeazul.jpg" alt="Pokemon Azul">
+      <p>Pokémon Azul</p>
+      <span>$20</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/game boy/pokeverde.jpg" alt="Pokemon Verde">
+      <p>Pokémon Verde</p>
+      <span>$20</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/game boy/marioland.jpg" alt="Marioland">
+      <p>Super Marioland</p>
+      <span>$20</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/game boy/zeldagameboy.jpg" alt="Pokemon Zelda">
+      <p>Zelda Link´s Awakening DX</p>
+      <span>$20</span>
+    </div>
+  </div>
+
+  <div id="juegos-snes" class="juegos-grid">
+    <h3>SNES</h3>
+    <div class="juego">
+      <img src="imagenes/snes/aladdin.jpg" alt="Aladdin">
+      <p>Aladdin</p>
+      <span>$40</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/snes/animaniacssnes.jpg" alt="Animaniacs">
+      <p>Animaniacs</p>
+      <span>$40</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/snes/donkey kong snes.jpg" alt="Donkey kong">
+      <p>Donkey Kong Country</p>
+      <span>$40</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/snes/lionking.jpg" alt="El rey leon">
+      <p>El Rey Leon</p>
+      <span>$40</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/snes/Mortal-Kombat-SNES.jpg" alt="Mortal Kombat">
+      <p>Mortal Kombat</p>
+      <span>$40</span>
+    </div>
+    <div class="juego">
+      <img src="imagenes/snes/Super-Mario-SNES.jpg" alt="Super Mario">
+      <p>Super Mario All Stars</p>
+      <span>$40</span>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer-container">
+    
+      <div class="formulario">
+        <h2>Formulario de consulta</h2>
+        <form action="https://formspree.io/f/mzzrppzj" method="POST" class="campos-formulario">
+          <label>
+            Nombre:
+            <input type="text" name="nombre">
+          </label>
+          <label>
+            Apellido:
+            <input type="text" name="apellido">
+          </label>
+          <label>
+            Mail:
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Mensaje:
+            <textarea type="textarea" name="mensaje"></textarea>
+          </label>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div class="redes">
+        <h2>Seguinos en redes sociales:</h2>
+        <nav>
+          <ul>
+            <li><i class="fa-brands fa-instagram"></i> Instagran</li>
+            <li><i class="fa-brands fa-tiktok"></i> Tiktok</li>
+            <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="pagar">
+        <h2>Formas de pago $:</h2> 
+        <nav>
+          <ul>
+            <li><i class="fa-solid fa-money-bill"></i> Efectivo</li>
+            <li><i class="fa-brands fa-cc-mastercard">‌</i> Credito</li>
+            <li><i class="fa-brands fa-cc-visa">‌</i> Debito</li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="mapa">
+        <h2>Visitanos</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.627034731574!2d-58.5956428!3d-34.6440676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78273397ab1%3A0x5093683b11b0c457!2sHaedo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715887460872!5m2!1ses-419!2sar"
+          width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
